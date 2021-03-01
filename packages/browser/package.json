@@ -1,0 +1,23 @@
+{
+  "name": "@hutko/browser-version",
+  "version": "1.8.0",
+  "author": {
+    "name": "Louis Chatriot",
+    "email": "louis.chatriot@gmail.com"
+  },
+  "contributors": [
+    "Louis Chatriot"
+  ],
+  "dependencies": {
+    "async": "~0.2.9",
+    "fs-extra": "~0.6.3",
+    "uglify-js": "~2.3.6",
+    "browserify": "~2.25.0"
+  },
+  "devDependencies": {
+    "open": "^7.4.2"
+  },
+  "scripts": {
+    "test": "open ./test/index.html"
+  }
+}
