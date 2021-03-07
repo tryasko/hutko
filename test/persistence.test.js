@@ -1,16 +1,15 @@
-var should = require("chai").should(),
-  assert = require("chai").assert,
+var assert = require("chai").assert,
   testDb = "workspace/test.db",
   fs = require("fs"),
   path = require("path"),
   _ = require("underscore"),
   async = require("async"),
   model = require("../lib/model"),
-  customUtils = require("../lib/customUtils"),
   Datastore = require("../lib/datastore"),
   Persistence = require("../lib/persistence"),
   storage = require("../lib/storage"),
   child_process = require("child_process");
+
 describe("Persistence", function () {
   var d;
 

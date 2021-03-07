@@ -1,7 +1,5 @@
-var should = require("chai").should(),
-  assert = require("chai").assert,
-  customUtils = require("../lib/customUtils"),
-  fs = require("fs");
+var customUtils = require("../lib/customUtils");
+
 describe("customUtils", function () {
   describe("uid", function () {
     it("Generates a string of the expected length", function () {

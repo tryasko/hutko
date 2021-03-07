@@ -1,5 +1,4 @@
-var should = require("chai").should(),
-  assert = require("chai").assert,
+var assert = require("chai").assert,
   testDb = "workspace/test.db",
   fs = require("fs"),
   path = require("path"),
@@ -9,6 +8,7 @@ var should = require("chai").should(),
   Datastore = require("../lib/datastore"),
   Persistence = require("../lib/persistence"),
   reloadTimeUpperBound = 60; // In ms, an upper bound for the reload time used to check createdAt and updatedAt
+
 describe("Database", function () {
   var d;
 

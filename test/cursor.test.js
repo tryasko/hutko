@@ -1,11 +1,9 @@
-var should = require("chai").should(),
-  assert = require("chai").assert,
+var assert = require("chai").assert,
   testDb = "workspace/test.db",
   fs = require("fs"),
   path = require("path"),
   _ = require("underscore"),
   async = require("async"),
-  model = require("../lib/model"),
   Datastore = require("../lib/datastore"),
   Persistence = require("../lib/persistence"),
   Cursor = require("../lib/cursor");
