@@ -1,9 +1,7 @@
 var model = require("../lib/model"),
-  should = require("chai").should(),
   assert = require("chai").assert,
   expect = require("chai").expect,
   _ = require("underscore"),
-  async = require("async"),
   util = require("util"),
   Datastore = require("../lib/datastore"),
   fs = require("fs");

@@ -1,10 +1,5 @@
 var Index = require("../lib/indexes"),
-  customUtils = require("../lib/customUtils"),
-  should = require("chai").should(),
-  assert = require("chai").assert,
-  _ = require("underscore"),
-  async = require("async"),
-  model = require("../lib/model");
+  assert = require("chai").assert;
 
 describe("Indexes", function () {
   describe("Insertion", function () {
