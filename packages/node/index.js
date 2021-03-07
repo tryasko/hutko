@@ -1,3 +1,3 @@
-var Datastore = require('./lib/datastore');
+var Datastore = require("./lib/datastore");
 
 module.exports = Datastore;
