@@ -1,20 +1,21 @@
 // Capture F5 to reload the base page testPersistence.html not this one
-$(document).on('keydown', function (e) {
+$(document).on("keydown", function (e) {
   if (e.keyCode === 116) {
     e.preventDefault();
-    window.location = 'testPersistence.html';
+    window.location = "testPersistence.html";
   }
 });
 
-
 console.log("Checking tests results");
-console.log("Please note these tests work on Chrome latest, might not work on other browsers due to discrepancies in how local storage works for the file:// protocol");
+console.log(
+  "Please note these tests work on Chrome latest, might not work on other browsers due to discrepancies in how local storage works for the file:// protocol"
+);
 
-function testsFailed () {
+function testsFailed() {
   document.getElementById("results").innerHTML = "TESTS FAILED";
 }
 
-var filename = 'test';
+var filename = "test";
 
 var db = new Nedb({ filename: filename, autoload: true });
 db.find({}, function (err, docs) {
@@ -29,11 +30,11 @@ db.find({}, function (err, docs) {
     return testsFailed();
   }
 
-  if (docs[0].hello !== 'world') {
+  if (docs[0].hello !== "world") {
     console.log("Unexpected document");
     return testsFailed();
   }
 
-  document.getElementById("results").innerHTML = "BROWSER PERSISTENCE TEST PASSED";
+  document.getElementById("results").innerHTML =
+    "BROWSER PERSISTENCE TEST PASSED";
 });
-
